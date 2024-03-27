@@ -1,10 +1,14 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
 module.exports = {
   siteMetadata: {
-    title: `contact_book`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "contact book",
   },
-  plugins: [],
-}
+  plugins: ["gatsby-plugin-styled-components"],
+  proxy: {
+    prefix: "/api",
+    url: "http://localhost:8000",
+  },
+};

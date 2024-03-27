@@ -1,0 +1,13 @@
+{
+    "canisters": {
+      "contact_book": {
+        "main": "src/backend/contact_book/Main.mo"
+      },
+      "www": {
+        "dependencies": ["contact_book"],
+        "type": "assets",
+        "source": ["public"]
+      }
+    }
+  }
+ 
